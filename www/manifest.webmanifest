@@ -1,0 +1,27 @@
+{
+  "name": "Rifa Kit F1",
+  "short_name": "RifaKitF1",
+  "description": "Rifa Digital Kit F1",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#92009f",
+  "icons": [
+    {
+      "src": "assets/icon/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null,
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "scope": "/",
+  "serviceworker": {
+    "src": "service-worker.js",
+    "scriptURL": "service-worker.js",
+    "scope": "/",
+    "use_cache_storage": true,
+    "use_indexed_db": true
+  }
+}
