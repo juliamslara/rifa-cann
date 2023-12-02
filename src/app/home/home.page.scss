@@ -1,0 +1,158 @@
+ion-content {
+  --background: url("../../assets/images/background-min.png") repeat center
+    center fixed;
+  background-size: cover;
+
+  p {
+    color: white !important;
+  }
+  #desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #more {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+ion-header {
+  --background: transparent;
+  color: white; /* Set text color to white */
+  // Add other styles as needed
+}
+
+ion-title {
+  --background: transparent;
+}
+
+ion-toolbar {
+  --background: transparent;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Add a semi-transparent black background to the toolbar */
+}
+
+#container {
+  max-width: 600px; /* Adjust as needed */
+  top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  text-align: center;
+
+  p {
+    margin-top: 0!important;
+    letter-spacing: 1px;
+    &#preco {
+      margin-top: 5px!important;
+      font-weight: bold;
+    }
+  }
+}
+
+ion-modal {
+  ion-title {
+    &#preco{
+      padding-left: 0;
+      margin-left: 0;
+      font-weight: 200;
+    }
+
+  }
+  ion-button {
+    border: none;
+    span {
+      color: rgb(144, 0, 144) !important;
+    }
+  }
+  .ion-padding {
+    ion-button {
+      min-width: 75px;
+      color: rgb(255, 255, 255) !important;
+      --background: rgb(0, 203, 0) !important;
+      span {
+        color: rgb(255, 255, 255) !important;
+      }
+    }
+    ion-button:focus {
+      --background: #4d0076 !important;
+      --color: white;
+    }
+  }
+  ion-list,
+  ion-item {
+    --background: transparent;
+    background: transparent;
+  }
+  ion-img {
+    border-radius: 5px;
+  }
+  ion-toolbar {
+    --background: transparent;
+    background: transparent;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .participate-button {
+    border: solid 1px purple;
+    --background: rgb(152, 0, 152); // Set your desired button background color
+    --color: #ffffff; // Set your desired button text color
+    font-weight: bold;
+    width: 90%; // Adjust the width as needed
+    margin: auto; // Center the button
+  }
+}
+
+img {
+  border-radius: 10px;
+}
+
+ion-button {
+  margin-top: 2.5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: solid 2px;
+  border-color: rgb(0, 203, 0);
+  height: 50px;
+  width: 50px;
+
+  svg {
+    color: rgb(184, 0, 184);
+  }
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+
+#divulgar-btn{
+  --background:black!important ;
+}
+ion-fab-button{
+  width: 125px;
+}

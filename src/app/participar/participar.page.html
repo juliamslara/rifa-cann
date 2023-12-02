@@ -1,0 +1,125 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title size="large">Comprar Rifa Kit F1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-buttons>
+    <ion-button
+      id="voltar"
+      slot="start"
+      [routerLink]="['/home']"
+      (click)="toastAllowed = false;"
+      >Voltar</ion-button
+    >
+    <ion-button
+      slot="end"
+      (click)="toastAllowed = false; phoneNumber = ''; inputField.setFocus(); toastAllowed = true"
+      >LIMPAR TELEFONE</ion-button
+    >
+  </ion-buttons>
+  <ion-item>
+    <ion-label position="floating">Telefone</ion-label>
+    <ion-input
+      #inputField
+      [(ngModel)]="phoneNumber"
+      type="tel"
+      (input)="getFormattedPhoneNumber()"
+      (ionBlur)="onReleaseGetData(phoneNumber)"
+    ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input
+      placeholder="Opcional"
+      [(ngModel)]="name"
+      type="text"
+    ></ion-input>
+  </ion-item>
+  <br />
+  <ion-label id="qtd"
+    >Quantidade de Rifas &nbsp; &nbsp; Total: R$
+    {{selectedNumber}},00</ion-label
+  >
+  <!-- <ion-label id="qtd">Quantidade de Rifas</ion-label> -->
+  <ion-item id="qtd-rifas">
+    <ion-button (click)="decrement()" shape="round" slot="start">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-dash"
+        viewBox="0 0 16 16"
+      >
+        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+      </svg>
+    </ion-button>
+    <ion-input
+      id="number"
+      [(ngModel)]="selectedNumber"
+      type="number"
+      min="1"
+      (ionChange)="validateInput($event)"
+    ></ion-input>
+    <ion-button (click)="increment()" shape="round" slot="end">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-plus"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+        />
+      </svg>
+    </ion-button>
+  </ion-item>
+  <ion-toolbar>
+    <ion-title id="preco"><img src="../../assets/images/pix.png" /> </ion-title>
+    <ion-buttons slot="end">
+      <ion-button
+        id="buy"
+        [strong]="true"
+        (click)="comprarRifa()"
+        [routerLink]="['/pagamento']"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-cart-check"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"
+          />
+          <path
+            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+          />
+        </svg>
+        <span>COMPRAR</span>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <br /><br /><br />
+  <ion-toolbar *ngIf="possuiRifas">
+    <span id="preco">Você possui rifas compradas!</span>
+    <ion-buttons slot="end">
+      <ion-button (click)="openAlert()"> Verificar </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <!-- <br />
+  <ion-item>
+    <span id="maiorvalor">Clique Aqui</span>
+    <span>&nbsp; para comprar mais que 50 rifas!</span>
+  </ion-item>
+  <br /> -->
+
+ 
+</ion-content>

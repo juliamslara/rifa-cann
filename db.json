@@ -1,0 +1,82 @@
+{
+  "rifas": [
+    {
+      "id": "8HAo2VN",
+      "pagamento": "pendente",
+      "telefone": "65992484751",
+      "nome": "Gustavo"
+    },
+    {
+      "pagamento": "pendente",
+      "telefone": "65984736730",
+      "nome": "Julia",
+      "id": "iKv5kMK"
+    },
+    {
+      "nome": "Dante",
+      "telefone": "65992489999",
+      "pagamento": "pendente",
+      "id": "Bvuo_xB"
+    },
+    {
+      "nome": "",
+      "telefone": "",
+      "pagamento": "pendente",
+      "id": "1sIcV_y"
+    },
+    {
+      "nome": "",
+      "telefone": "",
+      "pagamento": "pendente",
+      "id": "jII_lAI"
+    },
+    {
+      "nome": "",
+      "telefone": "65992489999",
+      "pagamento": "pendente",
+      "id": "Uw7OeoB"
+    },
+    {
+      "nome": "",
+      "telefone": "65992489999",
+      "pagamento": "pendente",
+      "id": "EfF4KE0"
+    },
+    {
+      "nome": "",
+      "telefone": "65992489999",
+      "pagamento": "pendente",
+      "id": "onRsNqI"
+    },
+    {
+      "nome": "",
+      "telefone": "65992489999",
+      "pagamento": "pendente",
+      "id": "k4oDK4x"
+    },
+    {
+      "nome": "",
+      "telefone": "65992489999",
+      "pagamento": "pendente",
+      "id": "SFnX_3C"
+    },
+    {
+      "nome": "",
+      "telefone": "65992489999",
+      "pagamento": "pendente",
+      "id": "tcGQbid"
+    },
+    {
+      "nome": "",
+      "telefone": "65992489999",
+      "pagamento": "pendente",
+      "id": "3VCQU16"
+    },
+    {
+      "nome": "",
+      "telefone": "65992489999",
+      "pagamento": "pendente",
+      "id": "i72Dj6Q"
+    }
+  ]
+}

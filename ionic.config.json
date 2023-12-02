@@ -1,0 +1,7 @@
+{
+  "name": "rifa-cann",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

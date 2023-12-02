@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pagamento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="qrcode">
+    <img *ngIf="pixQrCodeUrl" [src]="pixQrCodeUrl" alt="PIX QR Code" />
+  </div>
+  <div id="copiacola">
+    <ion-button (click)="copyToClipboard(textToCopy)">Copiar Pix</ion-button>
+  </div>
+
+  <ion-item>
+    <ion-label position="stacked">Pix Copia e Cola</ion-label>
+    <ion-textarea
+      readonly="true"
+      autoGrow="true"
+      [(ngModel)]="textToCopy"
+      (click)="copyToClipboard(textToCopy)"
+    ></ion-textarea>
+  </ion-item>
+  <br />
+  <p>{{textoObrigado}}</p>
+</ion-content>

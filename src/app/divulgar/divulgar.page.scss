@@ -1,0 +1,59 @@
+ion-content {
+  --background: url("../../assets/images/background-min.png") repeat center
+    center fixed;
+  background-size: cover;
+
+  p {
+    color: white !important;
+  }
+}
+
+ion-header {
+  --background: transparent;
+  color: white; /* Set text color to white */
+  // Add other styles as needed
+}
+
+ion-title {
+  --background: transparent;
+  color: #92009f;
+}
+
+ion-toolbar {
+  --background: transparent;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Add a semi-transparent black background to the toolbar */
+}
+
+#qrcode {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  img {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+ion-item {
+  margin-top: 5px;
+  #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  img {
+    padding: 5px;
+    height: 52px;
+    width: 52px;
+    border-radius: 10px;
+  }
+}
