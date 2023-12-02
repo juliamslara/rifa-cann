@@ -71,35 +71,35 @@ export class HomePage {
 
   items = [
     {
-      img: '../../assets/images/purplef-lq.jpg',
+      img: 'assets/images/purplef-lq.jpg',
       name: 'Isqueiro Purple Fire Elétrico',
     },
     {
-      img: '../../assets/images/bag-lq.jpg',
+      img: 'assets/images/bag-lq.jpg',
       name: 'Case Bag Puff Life Clássica',
     },
     {
-      img: '../../assets/images/piteirasvidro-lq.jpg',
+      img: 'assets/images/piteirasvidro-lq.jpg',
       name: '3 Piteiras de Vidro Purple Fire',
     },
-    { img: '../../assets/images/ziplock-lq.jpg', name: 'Zip Lock Puff Life' },
+    { img: 'assets/images/ziplock-lq.jpg', name: 'Zip Lock Puff Life' },
     {
-      img: '../../assets/images/dichava-lq.jpg',
+      img: 'assets/images/dichava-lq.jpg',
       name: 'Dichavador Space Krusher',
     },
-    { img: '../../assets/images/cuia-lq.jpg', name: 'Cuia Purple Fire' },
-    { img: '../../assets/images/moco-lq.jpg', name: 'Mocó Purple Fire' },
-    { img: '../../assets/images/basex-lq.jpg', name: 'Base Boladora UmDois' },
+    { img: 'assets/images/cuia-lq.jpg', name: 'Cuia Purple Fire' },
+    { img: 'assets/images/moco-lq.jpg', name: 'Mocó Purple Fire' },
+    { img: 'assets/images/basex-lq.jpg', name: 'Base Boladora UmDois' },
     {
-      img: '../../assets/images/sedas-lq.jpg',
+      img: 'assets/images/sedas-lq.jpg',
       name: 'Sedas Raw e Bem Bolado',
     },
     {
-      img: '../../assets/images/piteiras-lq.jpg',
+      img: 'assets/images/piteiras-lq.jpg',
       name: 'Piteiras Raw e Bem Bolado',
     },
     {
-      img: '../../assets/images/tesoura-lq.jpg',
+      img: 'assets/images/tesoura-lq.jpg',
       name: 'Tesoura Dobrável Aço Inox',
     },
   ];
